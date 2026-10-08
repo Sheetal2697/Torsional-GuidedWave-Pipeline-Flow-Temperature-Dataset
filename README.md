@@ -60,7 +60,7 @@ D#_stage/
   flow/ or noflow/
     Troom/, T40C/, T45C/, T50C/, T55C/
       run01/, run02/
-        f<freq>k_5c.csv, f<freq>k_7c.csv, f<freq>k_10c.csv
+        f<freq>k_5c.csv, f<freq>k_7c.csv
 ```
 Each damage stage is provided as a separate zip file.
 
@@ -70,7 +70,7 @@ Files are named `f<frequency>k_<cycles>c.csv`, where the frequency is in kHz, e.
 Each file has a header row and 17 columns: `time` (s), then `ch1` to `ch16` (signal from PZT1 to PZT16, in [V]). One row per sample.
 
 ## 8. Metadata files (`metadata/`)
-- `experiment_log.csv`: one row per run (damage stage, flow, water temperature, run number, folder path). Each listed run folder contains the 5, 7 and 10-cycle files.
+- `experiment_log.csv`: one row per run (damage stage, flow, water temperature, run number, folder path). Each listed run folder contains the 5 and 7-cycle files.
 - `damage_description.csv`: location and size of each defect.
 - `damage_stages.csv`: which defects are present in each stage.
 
