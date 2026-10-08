@@ -1,0 +1,5 @@
+damage_stage,stage_id,description,defects_present
+D0_baseline,D0,undamaged pipe,none
+D1_notch,D1,first notch,N1
+D2_notch_notch,D2,first and second notch,N1;N2
+D3_notch_notch_pit,D3,two notches and surface pit,N1;N2;P1

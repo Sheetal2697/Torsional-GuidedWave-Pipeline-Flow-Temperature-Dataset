@@ -1,0 +1,4 @@
+﻿Damage_id,Type,Transducer_axis,Angle_deg,Distance_from_transducer_mm,Axial_mm,Circumferential_mm,Depth_mm,Tool
+N1,notch,PZT3,45,700,4,30,2,Dremel
+N2,notch,PZT5,90,500,4,30,2,Dremel
+P1,surface_pit,PZT14,292.5,800,18,15,2,Dremel
