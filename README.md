@@ -74,8 +74,15 @@ Each file has a header row and 17 columns: `time` (s), then `ch1` to `ch16` (sig
 - `damage_description.csv`: location and size of each defect.
 - `damage_stages.csv`: which defects are present in each stage.
 
-## 9. License
+## 9. Figure (`figure/`)
+`experimental_setup.png`
+
+![Experimental setup](figures/experimental_setup.png)
+
+(a) Photograph of the experimental setup showing the steel pipe connected to the water circulation system, including the water tank, motor and FPGA-based SHM system. (b) PYNQ FPGA-based SHM system with FPGA, power module, power bank and the SHM system. (c) Photograph of the steel pipe showing the shear-mode PZT transducers mounted on the pipe, and the machined notch and surface pit defects; inset: enlarged views of the notch and surface pit defects.
+
+## 10. License
 [CC BY 4.0]
 
-## 10. How to cite
+## 11. How to cite
 This dataset accompanies a manuscript that is currently under preparation. A citation for the related paper will be added once it is published.
