@@ -78,6 +78,4 @@ Each file has a header row and 17 columns: `time` (s), then `ch1` to `ch16` (sig
 [CC BY 4.0]
 
 ## 10. How to cite
-Please cite this dataset: [Authors (Year). Title [Data set]. Zenodo. https://doi.org/10.5281/zenodo.XXXXXXX]
-
-If the related paper is published, please cite it as well (details will be added here).
+This dataset accompanies a manuscript that is currently under preparation. A citation for the related paper will be added once it is published.
