@@ -77,7 +77,7 @@ Each file has a header row and 17 columns: `time` (s), then `ch1` to `ch16` (sig
 ## 9. Figure (`figure/`)
 `experimental_setup.png`
 
-![Experimental setup](figures/experimental_setup.png)
+![Experimental setup](figure/experimental_setup.png)
 
 (a) Photograph of the experimental setup showing the steel pipe connected to the water circulation system, including the water tank, motor and FPGA-based SHM system. (b) PYNQ FPGA-based SHM system with FPGA, power module, power bank and the SHM system. (c) Photograph of the steel pipe showing the shear-mode PZT transducers mounted on the pipe, and the machined notch and surface pit defects; inset: enlarged views of the notch and surface pit defects.
 
