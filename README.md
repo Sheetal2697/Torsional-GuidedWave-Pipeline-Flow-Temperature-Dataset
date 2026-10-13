@@ -5,6 +5,8 @@ This dataset contains ultrasonic guided-wave measurements from a steel pipe, acq
 Guided waves are widely used for structural health monitoring of pipelines because they can inspect long lengths of pipe from a single transducer location. In practice, however, the guided-wave response is affected by many factors besides damage. Internal fluid flow and temperature changes alter wave propagation, heating changes the properties and dimensions of the pipe, and the coupling of the transducers to the surface can vary with temperature and over time. These effects change the recorded signals and can mask, or be mistaken for, the changes caused by damage, which makes reliable damage detection difficult.
 This dataset was collected to study damage detection under such conditions. It includes internal water flow, water temperatures from room temperature up to 55 °C, and three cumulative damage stages (two notches and a surface pit) on the same pipe. Hence flow, temperature and damage effects are all present in the measurements. Torsional guided-wave modes were used for excitation and sensing, and signals were recorded with a ring of 16 PZT transducers in pulse-echo configuration. The data can be used to develop and test damage detection, localisation and compensation methods under near-realistic operating conditions.
 
+The experiments were carried out at the Cyber Physical Systems (CPS) Lab, Department of Electrical Engineering, Indian Institute of Technology (IIT) Bombay. This work was partially supported by a grant from the Centre of Excellence in Oil, Gas and Energy (CoE-OGE), IIT Bombay [grant no. DO/2021-COGE002-003].
+
 Contact: [Sheetal Patil, patilsheetal2697@gmail.com, ORCID: https://orcid.org/0009-0002-2768-1152]
 Corresponding author: [Prof. Siddharth Tallur, stallur@iitb.ac.in]
 
@@ -25,7 +27,7 @@ Corresponding author: [Prof. Siddharth Tallur, stallur@iitb.ac.in]
   - Excitation: Torsional T(0,1) guided-wave modes 
 
   ### 3.2 Data acquisition
-  - Instrument: custom-built FPGA(PYNQ-Z2 board)-based acquisition system 
+  - Instrument: custom-built FPGA (PYNQ-Z2 board)-based acquisition system 
   - Excitation signal: Hann-windowed toneburst with 5 and 7 cycles 
   - Excitation frequencies: 50, 55, 60, 65, 70 and 75 kHz (stage D3 only: 50, 60 and 70 kHz)
   - Sampling rate: 2 MHz (time step 0.5 µs)
@@ -50,7 +52,7 @@ Corresponding author: [Prof. Siddharth Tallur, stallur@iitb.ac.in]
 All defects were made with a Dremel rotary tool. Dimensions are approximate.
 
 ## 5. Test conditions
-- **Flow:** water flowing through the pipe (`flow`) or no water (`noflow`). Flow rate: 0.5m/s.
+- **Flow:** Turbulent water flow through the pipe (`flow`) or no water (`noflow`). Flow rate: 0.5m/s.
 - **Temperature:** room temperature (`Troom`, at ambient laboratory temperature), and 40, 45, 50 and 55 °C (`T40C` to `T55C`). Water was heated with two immersion heaters and continuously circulated.
 - No-flow data at 55 °C were not collected.
 - **Repeats:** each condition has `run01` and `run02`. Stage D3 has `run01` only. Only the first two runs per condition are included in this dataset.
