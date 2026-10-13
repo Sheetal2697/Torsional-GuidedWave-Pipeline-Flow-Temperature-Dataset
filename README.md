@@ -1,9 +1,9 @@
 # Guided-wave dataset
 
 ## 1. Overview
-This dataset contains ultrasonic guided-wave measurements from a water-filled pipe, acquired under flow and no-flow conditions at different water temperatures, for an undamaged pipe and three cumulative damage stages.
+This dataset contains ultrasonic guided-wave measurements from a steel pipe, acquired under flow and no-flow conditions at different water temperatures, for an undamaged pipe and three cumulative damage stages.
 Guided waves are widely used for structural health monitoring of pipelines because they can inspect long lengths of pipe from a single transducer location. In practice, however, the guided-wave response is affected by many factors besides damage. Internal fluid flow and temperature changes alter wave propagation, heating changes the properties and dimensions of the pipe, and the coupling of the transducers to the surface can vary with temperature and over time. These effects change the recorded signals and can mask, or be mistaken for, the changes caused by damage, which makes reliable damage detection difficult.
-This dataset was collected to study damage detection under such conditions. It includes internal water flow, water temperatures from room temperature up to 55 °C, and three cumulative damage stages (two notches and a surface pit) on the same pipe, so flow, temperature and damage effects are all present in the measurements. Torsional guided-wave modes were used for excitation and sensing, and signals were recorded with a ring of 16 PZT transducers. The data can be used to develop and test damage detection, localisation and compensation methods under near-realistic operating conditions.
+This dataset was collected to study damage detection under such conditions. It includes internal water flow, water temperatures from room temperature up to 55 °C, and three cumulative damage stages (two notches and a surface pit) on the same pipe. Hence flow, temperature and damage effects are all present in the measurements. Torsional guided-wave modes were used for excitation and sensing, and signals were recorded with a ring of 16 PZT transducers in pulse-echo configuration. The data can be used to develop and test damage detection, localisation and compensation methods under near-realistic operating conditions.
 
 Contact: [Sheetal Patil, patilsheetal2697@gmail.com, ORCID: https://orcid.org/0009-0002-2768-1152]
 Corresponding author: [Prof. Siddharth Tallur, stallur@iitb.ac.in]
@@ -22,10 +22,10 @@ Corresponding author: [Prof. Siddharth Tallur, stallur@iitb.ac.in]
   - Dimensions: 15 mm x 15 mm x 1 mm
   - Number and layout: 16 transducers (PZT1 to PZT16), attached equidistantly around the pipe circumference at 22.5° spacing (e.g., PZT3 = 45°, PZT5 = 90°, PZT14 = 292.5°). Channel `chN` in the data files corresponds to PZT N.
   - Distances along the pipe are measured from the transducer ring.
-  - Excitation: T(0,1) Torsional guided-wave modes 
+  - Excitation: Torsional T(0,1) guided-wave modes 
 
   ### 3.2 Data acquisition
-  - Instrument: custom-built FPGA-based acquisition system using a PYNQ-Z2 board
+  - Instrument: custom-built FPGA(PYNQ-Z2 board)-based acquisition system 
   - Excitation signal: Hann-windowed toneburst with 5 and 7 cycles 
   - Excitation frequencies: 50, 55, 60, 65, 70 and 75 kHz (stage D3 only: 50, 60 and 70 kHz)
   - Sampling rate: 2 MHz (time step 0.5 µs)
@@ -33,18 +33,19 @@ Corresponding author: [Prof. Siddharth Tallur, stallur@iitb.ac.in]
   - Units of recorded signals: Volts
 
 ## 4. Damage stages (cumulative, same pipe)
-| Stage | Folder | Defects present |
-|---|---|---|
-| D0 | `D0_baseline` | none (undamaged) |
-| D1 | `D1_notch` | N1 |
-| D2 | `D2_notch_notch` | N1, N2 |
-| D3 | `D3_notch_notch_pit` | N1, N2, P1 |
 
 | ID | Type | Location | Distance from ring | Axial | Circumferential | Depth |
 |---|---|---|---|---|---|---|
 | N1 | Notch | Along axis of PZT3 (45°) | 700 mm | 4 mm | 30 mm | 2 mm |
 | N2 | Notch | Along axis of PZT5 (90°) | 500 mm | 4 mm | 30 mm | 2 mm |
 | P1 | Surface pit | Along axis of PZT14 (292.5°) | 800 mm | 18 mm | 15 mm | 2 mm |
+
+| Stage | Folder | Defects present |
+|---|---|---|
+| D0 | `D0_baseline` | none (undamaged) |
+| D1 | `D1_notch` | N1 |
+| D2 | `D2_notch_notch` | N1, N2 |
+| D3 | `D3_notch_notch_pit` | N1, N2, P1 |
 
 All defects were made with a Dremel rotary tool. Dimensions are approximate.
 
@@ -62,7 +63,6 @@ D#_stage/
       run01/, run02/
         f<freq>k_5c.csv, f<freq>k_7c.csv
 ```
-Each damage stage is provided as a separate zip file.
 
 ## 7. File format
 Files are named `f<frequency>k_<cycles>c.csv`, where the frequency is in kHz, e.g., `f50k_7c.csv` is the 50 kHz, 7-cycle Hann-windowed excitation. Files for 5 and 7 cycles are in the same run folder.
