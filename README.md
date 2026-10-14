@@ -87,4 +87,14 @@ Each file has a header row and 17 columns: `time` (s), then `ch1` to `ch16` (sig
 [CC BY 4.0]
 
 ## 11. How to cite
-This dataset accompanies a manuscript that is currently under preparation. A citation for the related paper will be added once it is published.
+This dataset accompanies a manuscript that is currently under preparation. A citation for the manuscript will be provided shortly.
+
+## 12. Additional resources
+Other openly available guided-wave data on pipes, listed for reference:
+
+- **Ultrasonic guided waves data for structural health monitoring of pipelines** (El Mountassir, Mendeley Data, 2022): https://data.mendeley.com/datasets/ttb63krg6d/1
+  Measurements on a 6.4 m steel tube with a composite repair, recorded with a commercial guided-wave system using torsional and flexural modes at five frequencies, over about three months under natural laboratory temperature variation (19 to 26 °C). A corrosion-like defect was introduced in six steps. Described in: El Mountassir and Yaacoubi, *Data in Brief* 45 (2022) 108756.
+
+- **Ultrasonic-Guided-Waves-in-Polyethylene-Pipes** (GitHub): https://github.com/sme96/Ultrasonic-Guided-Waves-in-Polyethylene-Pipes
+  Time-domain signals from laboratory-tested and finite-element-modelled polyethylene pipes with different damage states, together with code for PCA and machine-learning classification.
+
